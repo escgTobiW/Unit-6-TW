@@ -11,7 +11,7 @@ public class PlayerScript : MonoBehaviour
     public float jump;
 
 
-    //Animator anim;
+    Animator anim;
 
 
     public float jumpSpeed = 8.0f;
@@ -22,7 +22,7 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
         rb = GetComponent<Rigidbody2D>();
         Helping = gameObject.AddComponent<Helping>();
@@ -52,7 +52,7 @@ public class PlayerScript : MonoBehaviour
         if ((Input.GetKey("w")) || (Input.GetKey("a")) || (Input.GetKey("s")) || (Input.GetKey("d")))
         {
 
-            //anim.SetBool("move", true);
+            anim.SetBool("run", true);
 
             if (Input.GetKey("w"))
             {
@@ -78,7 +78,7 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            //anim.SetBool("move", false);
+            anim.SetBool("run", false);
         }
 
 
