@@ -1886,7 +1886,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1adde7526a8ba5a438cd35820e6c4b77, type: 2}
     - target: {fileID: 919132149155446097, guid: a1e8262dcfbf5984db3341a7f33c48ba, type: 3}
       propertyPath: m_Name
-      value: Beckoning
+      value: Ghost
       objectReference: {fileID: 0}
     - target: {fileID: 6515712193588681746, guid: a1e8262dcfbf5984db3341a7f33c48ba, type: 3}
       propertyPath: m_LocalPosition.x
