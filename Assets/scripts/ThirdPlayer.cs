@@ -20,6 +20,7 @@ public class ThirdPlayer : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
+ 
 
     //Animator anim;
 
@@ -30,6 +31,8 @@ public class ThirdPlayer : MonoBehaviour
         rotation.y = transform.eulerAngles.y;
 
         //anim = GetComponent<Animator>();
+
+      
     }
 
     void Update()
@@ -75,6 +78,8 @@ public class ThirdPlayer : MonoBehaviour
         }
 
         //anim.SetBool("run", true);
-       
+
     }
+
+
 }

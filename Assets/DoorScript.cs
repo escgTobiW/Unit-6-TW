@@ -17,7 +17,7 @@ public class DoorScript : MonoBehaviour
     void Start()
     {
 
-
+        Object.FindFirstObjectByType<AudioManagerScript>().Play("Door");
     }
 
     void Update()
@@ -37,6 +37,8 @@ public class DoorScript : MonoBehaviour
         {
             //print("mouse pressed");
             //print(sceneName);
+            //FindObjectOfType<AudioManagerScript>().Play("Door");
+            Object.FindFirstObjectByType<AudioManagerScript>().Play("Door");
             if (sceneName == "Outside")
             {
                 SceneManager.LoadScene("Inside");
@@ -54,7 +56,7 @@ public class DoorScript : MonoBehaviour
                 // door = GameObject.Find("door");
                 // doorPos = new Vector2(door.transform.position.x, door.transform.position.y);
                 // player.transform.position = doorPos;
-
+               
 
             }
 
